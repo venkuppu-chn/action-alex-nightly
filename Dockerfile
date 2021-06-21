@@ -10,7 +10,7 @@ RUN apk --no-cache add git
 RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/nightly/master/install.sh| sh -s -- -b /usr/local/bin
 
 # TODO: Install a linter and/or change docker image as you need.
-RUN wget -O - -q https://git.io/misspell | sh -s -- -b /usr/local/bin/
+RUN npm install alex --global
 
 COPY entrypoint.sh /entrypoint.sh
 
