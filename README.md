@@ -63,7 +63,7 @@ inputs:
 
 ```yaml
 name: reviewdog
-on: [pull_request]
+on: [pull_request_target]
 jobs:
   # TODO: change `linter_name`.
   linter_name:
